@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">VideoPlayback</string>
+    <string name="action_settings">Settings</string>
+    <string name="remote_file">Remote File</string>
+    <string name="local_file">Local File</string>
+
+</resources>

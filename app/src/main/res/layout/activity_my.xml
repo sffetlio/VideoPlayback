@@ -1,0 +1,60 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MyActivity">
+
+    <VideoView
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:id="@+id/videoView"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/videoView"
+        android:src="@drawable/play"
+        android:id="@+id/play"
+        android:layout_centerHorizontal="true"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/videoView"
+        android:layout_toLeftOf="@id/play"
+        android:src="@drawable/prev"
+        android:id="@+id/prev"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/videoView"
+        android:src="@drawable/pause"
+        android:id="@+id/pause"
+        android:visibility="invisible"
+        android:layout_centerHorizontal="true"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/videoView"
+        android:src="@drawable/next"
+        android:layout_toRightOf="@+id/play"
+        android:id="@+id/next"/>
+
+    <ToggleButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/play"
+        android:layout_centerHorizontal="true"
+        android:textOff="@string/local_file"
+        android:textOn="@string/remote_file"
+        android:id="@+id/videoLocation"/>
+
+</RelativeLayout>
